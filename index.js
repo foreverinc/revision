@@ -19,7 +19,7 @@ Btn.addEventListener("click", function () {
 
     let endTime = new Date();
     //endTime.setHours(endTime.getHours() + 5);
-    endTime.setSeconds(endTime.getSeconds() + 5);    
+    endTime.setHours(endTime.getHours() + 5);    
     let currentTime = new Date();
     let timeLeft = endTime - currentTime;
     let timer = setInterval(function () {
