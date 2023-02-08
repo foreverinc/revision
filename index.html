@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Subject Picker</title>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card bg-primary ">
+                    <div class="card-body d-flex justify-content-between align-items-center" style="flex-wrap: wrap;">
+                        <div class="unit">
+                            <h1 class="text-warning">Course Unit: </h1>
+                            <h1 class="text-light" id="name"></h1>
+                        </div>
+                        <div class="d-flex">
+                            <span class="until text-warning fst-italic me-3">until</span>
+                            <div>
+                                <span class="badge text-bg-info text-success me-2" id="hour">00 Hrs: </span>
+                            </div>
+                            <div>
+                                <span class="badge text-bg-info text-success me-2" id="minute">00 Mins: </span>
+                            </div>
+                            <div>
+                                <span class="badge text-bg-info me-2 text-success" id="second">00 Secs: </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mx-auto">
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="text-center mt-5">
+        <button  id="btn" class="btn btn-success"><i class="bi bi-arrow-clockwise"></i> Refresh</button>
+        <button class="btn btn-primary" type="button" disabled id="btn1">
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Ongoing: <span id="on-go"></span>
+        </button>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
